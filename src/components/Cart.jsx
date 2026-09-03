@@ -1,0 +1,1 @@
+export default function Cart({ cartCount }) { return <section className="cart" id="cart"><p>Your honey bag</p><strong>{cartCount} {cartCount === 1 ? 'jar' : 'jars'}</strong><a href="#gallery">Keep shopping →</a></section> }

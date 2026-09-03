@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@500;600&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+   .gold-ring {
+  border: 2px solid transparent;
+  background:
+  linear-gradient(#013e37, #013e37) padding-box,
+  linear-gradient(135deg, transparent 0%, #d99a28 22%, rgba(255,250,240,.95) 50%, #d99a28 78%, transparent 100%) border-box;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes orbit { to { transform: rotate(360deg); } }
+.animate-orbit { animation: orbit 16s linear infinite; }
+
+.brand{
+  display:flex; align-items:center; gap:10px;
+  font-weight:900; letter-spacing:.12em; font-size:.92rem;
+}
+.brand-mark{
+  width:34px; height:34px; display:grid; place-items:center;
+  background:var(--butter); color:var(--green);
+  clip-path:polygon(25% 6%,75% 6%,100% 50%,75% 94%,25% 94%,0 50%);
+  font-size:17px;
+}
+
+.site-header { position: sticky; top: 0; z-index: 20; min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; padding: .75rem clamp(1.25rem, 4vw, 3rem); color: var(--cream); transition: background-color .25s ease, box-shadow .25s ease; }
+.site-header--scrolled { background: var(--green); box-shadow: 0 2px 16px rgba(0, 0, 0, .14); }
+.site-nav { display: flex; align-items: center; gap: 1.75rem; }
+.site-nav a { color: inherit; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.site-nav a:hover, .site-nav a:focus-visible { color: var(--butter); }
+.menu-toggle { display: none; width: 2.75rem; height: 2.75rem; padding: .6rem; border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
+.menu-toggle span { display: block; height: 2px; margin: .27rem 0; background: currentColor; }
+
+@media (max-width: 700px) {
+  .menu-toggle { display: block; }
+  .site-nav { position: absolute; top: 100%; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: .5rem 1.25rem 1.25rem; background: var(--green); }
+  .site-nav--open { display: flex; }
+  .site-nav a { padding: .9rem 0; }
+}

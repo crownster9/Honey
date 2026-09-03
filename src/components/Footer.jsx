@@ -1,0 +1,1 @@
+export default function Footer() { return <footer><a className="logo" href="#home">HONEY°</a><p>Purely, patiently made.</p><div><a href="#gallery">Shop</a><a href="#about">About</a><a href="#contact">Instagram</a></div><small>© 2026 Honey Co.</small></footer> }

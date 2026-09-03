@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+    --green:   #013e37;   /* deep forest green — the main brand color */
+--green-2: #022f2b;   /* slightly darker green — used for footer */
+--butter:  #ffefb3;   /* your signature butter-yellow accent */
+--cream:   #fffaf0;   /* off-white background for light sections */
+   --gold:    #d99a28;
+   --font-serif: 'Fraunces',Georgia,serif;
+
+}
