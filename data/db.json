@@ -1,0 +1,24 @@
+  {
+    "blogs" :
+    [ 
+      {
+        "title":"Book keeping",
+        "body":"lorem ipsum",
+        "name":"mario",
+        "id":1
+    },
+    {
+        "title":"Lecturer",
+        "body":"lorem ipsum",
+        "name":"jane",
+        "id":2
+    },
+     {
+        "title":"principal",
+        "body":"lorem ipsum  dfj ffhfhhfj",
+        "name":"bestie",
+        "id":3
+    }
+  ]
+}
+

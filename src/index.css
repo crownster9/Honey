@@ -6,5 +6,10 @@
 --cream:   #fffaf0;   /* off-white background for light sections */
    --gold:    #d99a28;
    --font-serif: 'Fraunces',Georgia,serif;
-
+     --animate-marquee: marquee 22s linear infinite;
 }
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+

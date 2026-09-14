@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
 const links = [
-  { label: 'Shop', href: '#gallery' },
-  { label: 'About', href: '#about' },
+  { label: 'Shop', href: '#honey' },
+  { label: 'About', href: '#story' },
   { label: 'Our process', href: '#craft' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -28,9 +28,10 @@ export default function Header() {
       <button className="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded={isMenuOpen} aria-controls="primary-navigation" onClick={() => setIsMenuOpen((open) => !open)}>
         <span /><span /><span />
       </button>
-      <nav id="primary-navigation" className={`site-nav ${isMenuOpen ? 'site-nav--open' : ''}`} aria-label="Primary navigation">
+      <nav id="primary-navigation" className={` opacity-90 w-full site-nav ${isMenuOpen ? 'site-nav--open' : ''}`} aria-label="Primary navigation">
         {links.map(({ label, href }) => <a href={href} key={href} onClick={closeMenu}>{label}</a>)}
       </nav>
+      <a className="header-shop-button" href="#honey" onClick={closeMenu}>Shop Honey</a>
     </header>
   )
 }
